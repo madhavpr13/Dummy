@@ -16,6 +16,7 @@ public class PrintAllFactors {
     }
     public static void main(String[] args) {
 
+        System.out.println("We'll print the factors of a number as an ArrayList");
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a positive number: ");
         int number = Math.abs(input.nextInt());
