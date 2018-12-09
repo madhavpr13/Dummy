@@ -8,6 +8,21 @@ public class BankAccount {
     private String customerEmail;
     private String customerPhoneNumber;
 
+    // constructor
+    public BankAccount() {
+        this("ZZZ-ZZZ-ZZZZ", 0.00, "Unknown Name", "Unknown email address", "AAA-AAA-AAAA");
+        System.out.println("Empty (Default) constructor was called. Setting fields to their default values");
+    }
+
+    public BankAccount(String accountNumber, double balance, String customerName, String customerEmail, String customerPhoneNumber) {
+
+        setAccountNumber(accountNumber);
+        setBalance(balance);
+        setCustomerName(customerName);
+        setCustomerEmail(customerEmail);
+        setCustomerPhoneNumber(customerPhoneNumber);
+    }
+
     // getters and setters
 
     public String getAccountNumber() {
