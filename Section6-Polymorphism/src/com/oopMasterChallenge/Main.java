@@ -11,6 +11,11 @@ public class Main {
 
         System.out.println(hamburger.itemizeHamburger());
 
+        HealthyBurger healthyBurger = new HealthyBurger(5.55, "Bacon");
+        healthyBurger.addHealthAddition1("Lentils", 3.41);
+        healthyBurger.addHealthAddition2("Panneer", 1.17);
+        healthyBurger.itemizeHamburger();
+
 
     }
 
