@@ -1,5 +1,7 @@
 package java_horstmann.interfaces;
 
+import java.util.Arrays;
+
 public class MeasurableTester {
 
     public static void main(String[] args) {
@@ -21,6 +23,19 @@ public class MeasurableTester {
         Measurable countryWithMaxArea = Data.max(countries);
         Country maxAreaCountry = (Country) countryWithMaxArea;
         System.out.println("The country with maximum area is " + maxAreaCountry.getName() + " with an area of " + maxAreaCountry.getMeasure());
+
+        Country uruguay = new Country("Uruguay", 176220);
+        Country thailand = new Country("Thailand", 513120);
+        System.out.println("Uruguay < Thailand?? " + uruguay.compareTo(thailand));
+
+        System.out.println("Sorting countries (the array of countries) by area...");
+        Arrays.sort(countries);
+        System.out.println("Modified countries array: " + Arrays.toString(countries));
+
+
+
+
     }
+
 
 }
