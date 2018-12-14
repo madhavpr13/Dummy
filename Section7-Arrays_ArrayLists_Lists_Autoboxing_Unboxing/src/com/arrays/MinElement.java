@@ -24,7 +24,7 @@ public class MinElement {
         int[] intArray = new int[count];
         Scanner input = new Scanner(System.in);
         for(int i = 0; i < count; i++) {
-            System.out.print("Enter element #" + i + ": ");
+            System.out.print("Enter element #" + (i+1) + ": ");
             intArray[i] = input.nextInt();
         }
 
