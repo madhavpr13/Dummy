@@ -21,6 +21,12 @@ public class MeasurerTester {
         String[] strings = {"Hello", "World", "Scala"};
         double averageLength = Data.average(strings, lengthMeasurer);
         System.out.println("Average length of the strings is " + averageLength);
+
+        Rectangle r1 = new Rectangle(5,10,20,30);
+        Rectangle r2 = new Rectangle(10,15,20,28);
+        Rectangle max = (Rectangle) Data.maximum(r1, r2, areaMeasurer);
+        System.out.println("The maximum rectangle has width " + max.getWidth() + ", and height " + max.getHeight());
+
     }
 
 

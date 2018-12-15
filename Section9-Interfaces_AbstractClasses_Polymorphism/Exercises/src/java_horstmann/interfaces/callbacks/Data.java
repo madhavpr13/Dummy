@@ -12,4 +12,9 @@ public class Data  {
 
         return (objects.length > 0) ? (sum / objects.length) : 0;
     }
+
+    public static Object maximum(Object a, Object b, Measurer meas) {
+
+        return (meas.measure(a) > meas.measure(b)) ? a : b;
+    }
 }
